@@ -13,7 +13,7 @@ public class HelloWorldController {
 	@GetMapping("/message")
 	public String getMessage() {
 		
-		return "hello-world and this is the corrupt world and this world is not for the people like me who is naiive";
+		return "hello-world, i have to change myself, things are not running as i have been planned";
 		
 		
 	}
