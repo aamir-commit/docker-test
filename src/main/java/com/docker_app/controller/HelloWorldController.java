@@ -13,7 +13,7 @@ public class HelloWorldController {
 	@GetMapping("/message")
 	public String getMessage() {
 		
-		return "hello-world";
+		return "hello-world and this is the iteration that i am making to demostarte the success of jenkins pipline build";
 		
 		
 	}
@@ -26,7 +26,7 @@ public class HelloWorldController {
 }
 
 
-// this is a simple hellow world class for the docker image push
+// this is a simple hello world class for the docker image push
 
 
 
@@ -37,5 +37,25 @@ public class HelloWorldController {
 
 //  we have given this name because this is the name through which the jar file creation is happen
 // so that is why we have provided this name 
+
+// we have added the following code in the Dockerfile
+
+
+//FROM openjdk:17
+
+//COPY target/docker-app.jar  /usr/app/n --> this is the file path in your docker container & this "target/docker-app.jar" is the jar file name
+
+//WORKDIR /usr/app/
+
+//EXPOSE 8080   --> this is optional , and this is the port number on which my application is running
+
+//ENTRYPOINT ["java","-jar","docker-app.jar"]
+
+// the jar file is present in the target folder
+
+
+
+
+
 
 
